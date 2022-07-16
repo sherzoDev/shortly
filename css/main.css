@@ -38,57 +38,76 @@
 body {
     font-family: "Poppins", "Arial", sans-serif;
 }
+
 a {
     text-decoration: none;
 }
+
 ul {
     list-style: none;
 }
+
 img {
     display: block;
     height: auto;
 }
+
 /* Container */
+
 .container {
     max-width: 1150px;
     margin: 0 auto;
     padding: 0 20px;
 }
+
 /* End Container */
+
 /* Navbar Start */
+
 .site-header {
     padding: 48px 0;
     position: fixed;
+    z-index: 999;
     top: 0;
     left: 0;
     width: 100%;
+    background-color: var(--main-white-color);
 }
+
 .site-inner {
     display: flex;
     align-items: center;
 }
+
 .site-logo {
     margin-right: 45.43px;
 }
+
 .navbar {
     margin-right: auto;
 }
+
 .navbar-list {
     display: flex;
 }
-.navbar-item {
-}
+
 .navbar-link {
     font-weight: 700;
     font-size: 15px;
     line-height: 22px;
     color: #9E9AA8;
 }
+
+.navbar-link:hover {
+    color:  #34313D;
+}
+
 .navbar-btn {
     display: flex;
     justify-content: end;
     align-items: center;
 }
+
 .navbar-login {    
     font-weight: 700;
     font-size: 15px;
@@ -96,6 +115,7 @@ img {
     margin-right: 37px;
     color: #9E9AA8;
 }
+
 .navbar-sign-up {
     background-color: #2BD0D0;
     padding: 9px 24px;
@@ -103,4 +123,101 @@ img {
     font-size: var(--main-font-size);
     border-radius: 28px;
 }
+
+.navbar-sign-up:hover {
+    background: #9AE3E3;
+}
+
 /* Navbar Start Finish */
+
+/* Site main start */
+
+/* Hero section */
+
+.hero {
+    background-image: url("../images/hero-bg.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 460px);
+    margin-top: 100px;
+    padding: 250px;
+    position: relative;
+}
+
+.hero-header {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: -2px;
+    color: #34313D;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    color: #9E9AA8;
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.hero-search-box {
+    position: absolute;
+    top: 670px;
+    width: 1100px;
+    height: 168px;
+    background-image: url("../images/hero-bottom-bg.png");
+    border-radius: 10px;
+    padding: 52px 64px;
+}
+
+.hero-search-box input {
+    padding: 14px 32px;
+    border: none;
+    border-radius: 10px;
+    height: 64px;
+    width: 769px;
+    margin-right: auto;
+}
+
+.hero-search-box button {
+    padding: 14px 32px;
+    border: none;
+    height: 64px;
+    border-radius: 10px;
+}
+
+/* End of Hero section */
+
+/* Statiscs section */
+
+.statiscs {
+    padding-top: 200px;
+    background-color: #EFF1F7;
+}
+
+.statics-heading {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #34313D;
+    margin-bottom: 18px;
+}
+
+.statics-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.122727px;
+    color: #9E9AA8;
+}
+
+/* End of Statiscs section */
+
+/* Site main begin */
