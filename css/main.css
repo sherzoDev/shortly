@@ -188,6 +188,13 @@ img {
     border: none;
     height: 64px;
     border-radius: 10px;
+    background: #2BD0D0;
+    border-radius: 10px;
+    color: var(--main-white-color);
+}
+
+.hero-search-box button:hover {
+    background: #9AE3E3;
 }
 
 /* End of Hero section */
@@ -324,6 +331,63 @@ img {
     padding-bottom: 32px;   
 }
 
+.article-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-btn a {
+    color: #fff;
+    padding: 13px 40px;
+    background-color: #2BD0D0;
+    border-radius: 28px;
+}
+
+.article-btn a:hover {
+    background: #9AE3E3;
+}
+
 /* End of Article */
 
 /* Site main begin */
+
+
+/* Footer Start */
+
+.footer {
+    background-color: #232127;
+    padding: 71.5px 0 70px 0px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-strong {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: #FFFFFF;
+    padding-bottom: 22px;
+}
+
+.footer-list {
+    margin-top: 22px;
+}
+
+.footer-link {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.234375px;
+    color: #BFBFBF;    
+}
+
+.footer-link:hover {
+    color: #2BD0D0;;
+}
+
+/* End of Footer Start */
