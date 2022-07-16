@@ -3,60 +3,104 @@
 :root {
     --main-black-color: #000;
     --main-white-color: #fff;
-    --main-font-size: 16px;
+    --main-font-size: 15    px;
     --main-border-radius: 5px;
 }
 
-/* roboto-300 - latin */
+/* poppins-500 - latin */
 
 @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    src: local(''),
-    url('../fonts/roboto-v30-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/roboto-v30-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* roboto-regular - latin */
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-    url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/roboto-v30-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* roboto-500 - latin */
-
-@font-face {
-    font-family: 'Roboto';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    src: local(''),
-    url('../fonts/roboto-v30-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/roboto-v30-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: local(""),
+    url("../fonts/poppins-v20-latin-500.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/poppins-v20-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* roboto-700 - latin */
+/* poppins-700 - latin */
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    src: local(''),
-    url('../fonts/roboto-v30-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/roboto-v30-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: local(""),
+    url("../fonts/poppins-v20-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/poppins-v20-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* Container */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: "Poppins", "Arial", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+img {
+    display: block;
+    height: auto;
+}
+/* Container */
 .container {
-    max-width: 1140px;
+    max-width: 1150px;
     margin: 0 auto;
     padding: 0 20px;
 }
-
 /* End Container */
+/* Navbar Start */
+.site-header {
+    padding: 48px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.site-inner {
+    display: flex;
+    align-items: center;
+}
+.site-logo {
+    margin-right: 45.43px;
+}
+.navbar {
+    margin-right: auto;
+}
+.navbar-list {
+    display: flex;
+}
+.navbar-item {
+}
+.navbar-link {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #9E9AA8;
+}
+.navbar-btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.navbar-login {    
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    margin-right: 37px;
+    color: #9E9AA8;
+}
+.navbar-sign-up {
+    background-color: #2BD0D0;
+    padding: 9px 24px;
+    color: var(--main-white-color);
+    font-size: var(--main-font-size);
+    border-radius: 28px;
+}
+/* Navbar Start Finish */
